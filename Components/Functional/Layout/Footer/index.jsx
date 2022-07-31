@@ -13,7 +13,7 @@ import {
   Input,
   Wrapper,
 } from "Components/Styled/Layout/Footer";
-import Button from "Components/Common/Inputs/Button/Button";
+import Button from "Components/Functional/Common/Inputs/Button/Button";
 
 import LozicIcon from "public/images/icons/Lozic.svg";
 import React from "react";
