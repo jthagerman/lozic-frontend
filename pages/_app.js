@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
 body,html {
   max-width: 100vw;
-  background-color: ${(props) => props.grayBG};
+  background-color: ${(props) => props.theme.grayBG};
   color: ${(props) => props.text};
 }
 html{

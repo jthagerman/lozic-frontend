@@ -48,7 +48,7 @@ const links = [
 const PageFooter = () => {
   return (
     <Footer>
-      <Row>
+      <Row border={true}>
         <Section>
           <Title>We are Lozic</Title>
           <Subtitle>

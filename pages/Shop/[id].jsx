@@ -3,11 +3,11 @@ import Image from "next/image";
 
 import Layout from "/Components/Functional/Layout/index.jsx";
 
-export default function Home() {
+export default function Product() {
   return (
     <>
       <Head>
-        <title>Title</title>
+        <title>Product</title>
       </Head>
       <Layout>
         <p>content</p>
