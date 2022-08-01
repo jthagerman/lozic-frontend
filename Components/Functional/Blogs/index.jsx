@@ -1,7 +1,7 @@
 import TextHeader from "Components/Functional/Common/Headers/TextHeader";
 import CardList from "Components/Functional/Common/Prouducts/CardList";
 
-import { Container } from "Components/Styled/Common/Blogs";
+import { Container } from "Components/Styled/Blogs";
 
 const Blogs = () => {
   return (
