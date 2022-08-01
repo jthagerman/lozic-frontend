@@ -40,7 +40,6 @@ export const Links = styled.div`
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  gap: 0px 40px;
   @media (max-width: ${breakpoints.largePhone}px) {
     display: none;
   }
@@ -65,12 +64,13 @@ export const Link = styled.a`
   color: white;
   text-decoration: none;
   cursor: pointer;
+  margin: 0px 40px 0px 0px;
 `;
 
 export const Icons = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 0px 18px;
+
   margin-right: 15px;
 `;
 
@@ -83,6 +83,7 @@ export const Icon = styled.a`
   cursor: pointer;
   user-drag: none;
   background-color: white;
+  margin: 0px 15px 0px 0px;
 
   object-fit: cover;
 `;

@@ -6,7 +6,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 12px 0px;
 `;
 
 export const Heading = styled.h1`

@@ -31,7 +31,7 @@ export const ItemList = styled.div`
   flex: 1;
   margin: 17px 19px;
   display: flex;
-  gap: 5px 0px;
+
   flex-direction: column;
   justify-content: space-evenly;
   align-self: flex-start;
@@ -52,14 +52,17 @@ export const Item = styled.div`
   font-weight: 500;
   font-size: 18px;
   flex-direction: row;
-  gap: 0px 8px;
+  margin: 5px 0px;
+
   align-items: center;
 
   @media (max-width: ${breakpoints.largePhone}px) {
     font-size: 14px;
   }
 `;
-export const ItemText = styled.div``;
+export const ItemText = styled.div`
+  margin: 0px 0px 0px 8px;
+`;
 export const Arrow = styled.div`
   height: 10px;
   background-image: url(${(props) => props.src});

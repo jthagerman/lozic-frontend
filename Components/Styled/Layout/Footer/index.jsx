@@ -93,8 +93,8 @@ export const Copyright = styled.div`
 `;
 
 export const Icon = styled.img`
-  height: 36.8194580078125px;
-  width: 117.63021850585938px;
+  height: 36px;
+  width: 117;
   margin: 40px 0px 0px 0px;
 `;
 
@@ -102,14 +102,14 @@ export const Links = styled.div`
   display: flex;
 
   flex-direction: row;
-  gap: 0px 25px;
+
   flex-wrap: wrap;
   margin-top: 70px;
 `;
 export const LinkColumn = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 10px 10px;
+  margin-right: 25px;
   padding: 0px;
   min-width: 120px;
 `;
@@ -117,11 +117,13 @@ export const LinkLabel = styled.label`
   font-family: "RedHatDisplay-Bold" serif;
   font-size: 16px;
   font-weight: 700;
+  margin: 0px 0px 10px 0px;
 `;
 export const LinkItem = styled.a`
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin: 0px 0px 10px 0px;
   font-family: "RedHatDisplay-Regular" serif;
   font-size: 16px;
   font-weight: 400;
@@ -138,7 +140,7 @@ export const Input = styled.input`
   border: none;
   outline: none;
   padding: 0px 10px;
-  margin: 0px 0px;
+  margin: 0px 0px 20px 0px;
   color: #4b4b4b;
   letter-spacing: 0.095em;
   font-size: 18px;
@@ -156,11 +158,10 @@ export const Wrapper = styled.div`
   flex-direction: row;
   margin: 0px;
   flex-wrap: wrap;
-  gap: 0px 20px
+
   overfow: hidden;
 
   @media (max-width: ${breakpoints.laptop}px) {
     flex-direction: column;
-    gap: 20px 20px
   }
 `;

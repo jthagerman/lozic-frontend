@@ -49,17 +49,21 @@ export const Text = styled.h1`
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
-  gap: 30px 0px;
+
   width: 100%;
   max-width: 1175px;
   padding: 20px 0px 40px 0px;
   span {
     max-width: 660px;
   }
+  a {
+    margin: 20px 0px 0px 0px;
+  }
 `;
 
 export const Orange = styled.span`
   color: ${(props) => props.theme.orange};
+  margin: 0px 10px 0px 0px;
 `;
 export const Sale = styled.div`
   font-weight: 500;

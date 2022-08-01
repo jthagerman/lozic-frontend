@@ -10,6 +10,9 @@ export const List = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 66px;
   width: 100%;
+
+  > div {
+    margin: 40px 0px;
+  }
 `;

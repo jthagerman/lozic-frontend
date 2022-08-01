@@ -70,7 +70,6 @@ export const Button = styled.a`
   justify-content: center;
   align-items: center;
 
-  gap: 8px;
   color: white;
   text-decoration: none;
   width: 188px;
