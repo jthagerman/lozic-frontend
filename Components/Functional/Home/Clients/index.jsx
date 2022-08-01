@@ -12,7 +12,8 @@ const Clients = () => {
       ></TextHeader>
       <ImageWithText
         image={clientImage.src}
-        subheading={"Mark McLane Head of Diversity, Inclusion and Well-being"}
+        author={`Mark McLane`}
+        subheading={`Head of Diversity, Inclusion and Well-being`}
         heading="Lozic has been a critical partner in M&G’s successful implementation of initiatives to drive business performance."
       ></ImageWithText>
     </Container>

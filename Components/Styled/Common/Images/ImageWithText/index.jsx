@@ -16,7 +16,35 @@ export const Image = styled.div`
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
   object-fit: cover;
+  z-index: 0;
 `;
 
-export const Heading = styled.div``;
-export const Subheading = styled.div``;
+export const Wrapper = styled.div`
+  position: absolute;
+  z-index: 1;
+
+  top: 0px;
+  bottom: 0px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+export const Heading = styled.div`
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  max-width: 500px;
+  color: white;
+`;
+export const Subheading = styled.div`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 5% 0px;
+  max-width: 500px;
+
+  color: #d6d5d8;
+`;

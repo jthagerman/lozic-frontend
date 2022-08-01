@@ -5,4 +5,5 @@ export const Container = styled.section`
   flex-direction: column;
   width: 100%;
   flex: 1;
+  gap: 30px 0px;
 `;

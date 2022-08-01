@@ -2,15 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Layout from "/Components/Functional/Layout/index.jsx";
+import Blogs from "Components/Functional/Blogs";
 
 export default function Blog() {
   return (
     <>
       <Head>
-        <title>Blog</title>
+        <title>Blogs</title>
       </Head>
       <Layout>
-        <p>content</p>
+        <Blogs></Blogs>
       </Layout>
     </>
   );

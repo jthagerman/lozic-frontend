@@ -3,15 +3,22 @@ import {
   Image,
   Heading,
   Subheading,
+  Wrapper,
 } from "Components/Styled/Common/Images/ImageWithText";
 
-const ImageWithText = ({ heading, subheading, image }) => {
+const ImageWithText = ({ heading, subheading, image, author }) => {
   if (!image) return null;
 
   return (
     <Container>
-      <Heading>{heading}</Heading>
-      <Subheading>{subheading}</Subheading>
+      <Wrapper>
+        <Heading>{heading}</Heading>
+        <Subheading>
+          <div>{author}</div>
+          {subheading}
+        </Subheading>
+      </Wrapper>
+
       <Image src={image}></Image>
     </Container>
   );

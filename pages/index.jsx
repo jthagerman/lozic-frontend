@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Title</title>
+        <title>Lozic</title>
       </Head>
       <Layout>
         <HomePage />

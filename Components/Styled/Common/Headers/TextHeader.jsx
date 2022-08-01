@@ -21,4 +21,6 @@ export const Subheading = styled.h2`
   font-weight: 400;
   padding: 0px;
   margin: 0px;
+  max-width: 750px;
+  text-align: center;
 `;
