@@ -21,7 +21,7 @@ const Hero = () => {
           <Text>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              quis sapien
+              quis sapian_2
             </span>
 
             <Button>Explore</Button>
