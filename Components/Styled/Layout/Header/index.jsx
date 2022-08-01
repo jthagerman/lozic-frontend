@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.header`
   display: flex;
@@ -6,12 +7,13 @@ export const Container = styled.header`
   flex-direction: column;
   align-items: center;
   justify-centent: center;
-  max-width: 1440px;
+  user-select: none;
+  user-drag: none;
   top: 0px;
 
   z-index: 100;
   height: 80px;
-
+  left: 0px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,7 +26,7 @@ export const Container = styled.header`
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 1175px;
+  max-width: ${breakpoints.maxWidth}px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,12 +41,24 @@ export const Links = styled.div`
   display: flex;
   flex-direction: row;
   gap: 0px 40px;
+  @media (max-width: ${breakpoints.largePhone}px) {
+    display: none;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: flex;
+  margin-right: 15px;
+  @media (min-width: ${breakpoints.largePhone}px) {
+    display: none;
+  }
 `;
 export const Logo = styled.img`
   width: 60.12px;
   height: 18.82px;
   cursor: pointer;
   user-drag: none;
+  margin: 0px 0px 0px 15px;
 `;
 export const Link = styled.a`
   font-size: 16px;
@@ -57,6 +71,7 @@ export const Icons = styled.div`
   display: flex;
   flex-direction: row;
   gap: 0px 18px;
+  margin-right: 15px;
 `;
 
 export const Icon = styled.a`

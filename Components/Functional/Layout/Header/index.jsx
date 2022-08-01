@@ -5,11 +5,13 @@ import {
   Logo,
   Icon,
   Icons,
+  MobileMenu,
   Link,
 } from "Components/Styled/Layout/Header";
 import LozicIcon from "public/images/icons/Lozic.svg";
 import ShoppingCart from "public/images/icons/shoppingCart.svg";
 import MagGlass from "public/images/icons/mag.svg";
+import hamburgerMenu from "public/images/icons/hamburger.svg";
 
 const Header = () => {
   return (
@@ -28,6 +30,9 @@ const Header = () => {
             <Icon src={ShoppingCart.src}></Icon>
           </Icons>
         </Links>
+        <MobileMenu>
+          <Icon src={hamburgerMenu.src}></Icon>
+        </MobileMenu>
       </Wrapper>
     </Container>
   );

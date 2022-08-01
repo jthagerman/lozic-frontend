@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.div`
   display: flex;
@@ -6,8 +7,6 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   gap: 12px 0px;
-
-  padding: 30px 15px;
 `;
 
 export const Heading = styled.h1`
@@ -15,6 +14,18 @@ export const Heading = styled.h1`
   padding: 0px;
   margin: 0px;
   font-weight: 500;
+  text-align: center;
+  margin: 0px 15px;
+
+  @media (max-width: ${breakpoints.tablet}px) {
+    font-size: 48px;
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 38px;
+  }
+  @media (max-width: ${breakpoints.mobile}px) {
+    font-size: 28px;
+  }
 `;
 export const Subheading = styled.h2`
   font-size: 18px;
@@ -23,4 +34,15 @@ export const Subheading = styled.h2`
   margin: 0px;
   max-width: 750px;
   text-align: center;
+  margin: 0px 15px;
+
+  @media (max-width: ${breakpoints.tablet}px) {
+    font-size: 17px;
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 15px;
+  }
+  @media (max-width: ${breakpoints.mobile}px) {
+    font-size: 13px;
+  }
 `;

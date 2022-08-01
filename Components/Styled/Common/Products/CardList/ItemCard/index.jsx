@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.div`
   display: flex;
@@ -32,6 +33,7 @@ export const ItemList = styled.div`
   display: flex;
   gap: 5px 0px;
   flex-direction: column;
+  justify-content: space-evenly;
   align-self: flex-start;
 `;
 export const Category = styled.div`
@@ -40,6 +42,10 @@ export const Category = styled.div`
   width: 100%;
   margin: 0px 0px 8px 0px;
   color: ${(props) => props.theme.grayText};
+
+  @media (max-width: ${breakpoints.largePhone}px) {
+    margin: 0px 0px 6px 0px;
+  }
 `;
 export const Item = styled.div`
   display: flex;
@@ -48,6 +54,10 @@ export const Item = styled.div`
   flex-direction: row;
   gap: 0px 8px;
   align-items: center;
+
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 14px;
+  }
 `;
 export const ItemText = styled.div``;
 export const Arrow = styled.div`

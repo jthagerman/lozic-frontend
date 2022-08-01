@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Footer = styled.footer`
   background-color: #060809;
@@ -13,8 +14,15 @@ export const Section = styled.section`
   width: 100%;
   max-width: 1166px;
   display: flex;
+  min-width: 275px;
   flex: 1;
   flex-direction: column;
+  @media (max-width: ${breakpoints.content + 100}px) {
+    padding: 0px 25px;
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+    padding: 0px 5%;
+  }
 `;
 
 export const Row = styled.div`
@@ -23,16 +31,28 @@ export const Row = styled.div`
   flex: 1;
   width: 100%;
   max-width: 1166px;
+  flex-wrap: wrap;
   flex-direction: row;
   padding-bottom: ${(props) => (props.padding ? props.padding : "40px")};
   border-bottom: ${(props) => (!props.border ? "1px solid #4b4b4b" : "none")};
   border-top: ${(props) => (!props.border ? "1px solid #4b4b4b" : "none")};
+  @media (max-width: ${breakpoints.tablet}px) {
+    padding-bottom: ${(props) => (props.padding ? props.padding : "30px")};
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+    padding-bottom: ${(props) => (props.padding ? props.padding : "20px")};
+  }
 `;
 
 export const Title = styled.div`
   font-size: 50.78px;
   font-weight: 500;
   margin: 45px 0px 0px 0px;
+
+  @media (max-width: ${breakpoints.tablet}px) {
+    font-size: 40px;
+    margin: 30px 0px 0px 0px;
+  }
 `;
 export const Subtitle = styled.p`
   font-size: 18px;
@@ -43,6 +63,15 @@ export const Subtitle = styled.p`
 
   margin: 15px 0px 20px 0px;
   padding: 0px;
+
+  @media (max-width: ${breakpoints.tablet}px) {
+    font-size: 16px;
+    margin: 12px 0px 15px 0px;
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
+  }
 `;
 
 export const Copyright = styled.div`
@@ -54,6 +83,13 @@ export const Copyright = styled.div`
   
   max-width: 1166px;
   padding: 7px 0px;
+
+  @media (max-width: ${breakpoints.content + 100}px) {
+    padding: 7px 20px;
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+   font-size: 14px;
+  }
 `;
 
 export const Icon = styled.img`
@@ -73,6 +109,7 @@ export const LinkColumn = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 10px 0px;
+  min-width: 120px;
 `;
 export const LinkLabel = styled.label`
   font-family: "RedHatDisplay-Bold" serif;
@@ -104,7 +141,13 @@ export const Input = styled.input`
   letter-spacing: 0.095em;
   font-size: 18px;
   height: 48px;
-  min-width: 300px;
+  min-width: 280px;
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 16px;
+    height: 40px;
+    width: 90%;
+    min-width: 200px;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -113,4 +156,9 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   gap: 0px 20px
   overfow: hidden;
+
+  @media (max-width: ${breakpoints.laptop}px) {
+    flex-direction: column;
+    gap: 20px 20px
+  }
 `;

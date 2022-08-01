@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Button = styled.a`
   background-color: ${(props) => props.theme.orange};
@@ -20,5 +21,10 @@ export const Button = styled.a`
   transition: opacity 0.2s ease-in;
   :hover {
     opacity: 0.85;
+  }
+
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 14px;
+    height: 40px;
   }
 `;
