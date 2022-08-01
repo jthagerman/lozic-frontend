@@ -102,13 +102,15 @@ export const Links = styled.div`
   display: flex;
 
   flex-direction: row;
+  gap: 0px 25px;
   flex-wrap: wrap;
   margin-top: 70px;
 `;
 export const LinkColumn = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 10px 0px;
+  gap: 10px 10px;
+  padding: 0px;
   min-width: 120px;
 `;
 export const LinkLabel = styled.label`
@@ -145,7 +147,7 @@ export const Input = styled.input`
   @media (max-width: ${breakpoints.largePhone}px) {
     font-size: 16px;
     height: 40px;
-    width: 90%;
+    width: 80%;
     min-width: 200px;
   }
 `;

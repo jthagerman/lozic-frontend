@@ -58,7 +58,7 @@ export const Logo = styled.img`
   height: 18.82px;
   cursor: pointer;
   user-drag: none;
-  margin: 0px 0px 0px 15px;
+  margin: 0px 0px 0px 20px;
 `;
 export const Link = styled.a`
   font-size: 16px;
