@@ -121,7 +121,7 @@ export const Row = styled.div`
   width: 100%;
   padding: 30px 0px;
   border-bottom: 1px solid #e4e4e4;
-  border: 1px solid blue;
+
   @media (max-width: ${breakpoints.content + 200}px) {
     width: 90vw;
   }
