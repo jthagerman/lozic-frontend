@@ -27,4 +27,8 @@ export const Button = styled.a`
     font-size: 14px;
     height: 40px;
   }
+  @media (max-width: ${breakpoints.mobile}px) {
+    font-size: 14px;
+    height: 30px;
+  }
 `;

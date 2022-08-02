@@ -28,6 +28,7 @@ export const FAQs = () => {
   return (
     <Container>
       <TextHeader
+        padding="50px 0px 20px 0px"
         title="Looking for Anwers?"
         subtitle="It's hard to believe that Dronies have replaced birds. Have you got any questions? We got answers."
       ></TextHeader>

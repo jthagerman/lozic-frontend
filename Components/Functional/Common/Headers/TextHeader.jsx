@@ -4,9 +4,9 @@ import {
   Subheading,
 } from "Components/Styled/Common/Headers/TextHeader";
 
-const TextHeader = ({ title, subtitle }) => {
+const TextHeader = ({ title, subtitle, padding }) => {
   return (
-    <Container>
+    <Container padding={padding}>
       {title && <Heading>{title}</Heading>}
       {subtitle && <Subheading>{subtitle}</Subheading>}
     </Container>

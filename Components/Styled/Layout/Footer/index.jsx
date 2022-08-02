@@ -53,6 +53,9 @@ export const Title = styled.div`
     font-size: 40px;
     margin: 30px 0px 0px 0px;
   }
+  @media (max-width: ${breakpoints.mobile}px) {
+    font-size: 24px;
+  }
 `;
 export const Subtitle = styled.p`
   font-size: 18px;
@@ -72,15 +75,18 @@ export const Subtitle = styled.p`
     font-size: 14px;
     margin: 10px 0px 10px 0px;
   }
+  @media (max-width: ${breakpoints.mobile}px) {
+    font-size: 13px;
+  }
 `;
 
 export const Copyright = styled.div`
   font-family: "RedHatDisplay-Regular" serif;
   font-weight: 400;
   display: flex;
-  flex;
+
   font-size: 16px;
-  
+
   max-width: 1166px;
   padding: 7px 0px;
 
@@ -88,7 +94,7 @@ export const Copyright = styled.div`
     padding: 7px 20px;
   }
   @media (max-width: ${breakpoints.largePhone}px) {
-   font-size: 14px;
+    font-size: 14px;
   }
 `;
 
@@ -96,6 +102,12 @@ export const Icon = styled.img`
   height: 36px;
   width: 117;
   margin: 40px 0px 0px 0px;
+  align-self: flex-start;
+
+  @media (max-width: ${breakpoints.mobile}px) {
+    height: 18px;
+    width: 60;
+  }
 `;
 
 export const Links = styled.div`

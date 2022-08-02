@@ -7,6 +7,7 @@ const Clients = () => {
   return (
     <Container>
       <TextHeader
+        padding="0px 0px 40px 0px"
         title="Our clients speak for themselves"
         subtitle="Our clients speak for themselves"
       ></TextHeader>
