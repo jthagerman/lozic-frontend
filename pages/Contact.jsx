@@ -1,16 +1,16 @@
 import Head from "next/head";
-import Image from "next/image";
+import Contact from "Components/Functional/Contact";
 
 import Layout from "/Components/Functional/Layout/index.jsx";
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <>
       <Head>
         <title>Contact Us</title>
       </Head>
       <Layout>
-        <p>content</p>
+        <Contact />
       </Layout>
     </>
   );
