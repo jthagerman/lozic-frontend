@@ -21,10 +21,10 @@ const Header = () => {
           <Logo src={LozicIcon.src} />
         </a>
         <Links>
-          <Link href="/">News</Link>
-          <Link href="/">Shop</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/blogs">News</Link>
+          <Link href="/shop">Shop</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
           <Icons>
             <Icon src={MagGlass.src}></Icon>
             <Icon src={ShoppingCart.src}></Icon>

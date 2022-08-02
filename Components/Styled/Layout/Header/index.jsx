@@ -70,8 +70,9 @@ export const Link = styled.a`
 export const Icons = styled.div`
   display: flex;
   flex-direction: row;
-
-  margin-right: 15px;
+  justify-content: center;
+  margin-right: 17px;
+  margin-bottom: 3px;
 `;
 
 export const Icon = styled.a`
