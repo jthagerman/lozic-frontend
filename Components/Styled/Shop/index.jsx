@@ -25,7 +25,6 @@ export const List = styled.div`
 `;
 
 export const Navigation = styled.div`
-  border: 1px solid blue;
   margin: 30px 0px;
   height: 47px;
 `;

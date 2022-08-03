@@ -22,7 +22,7 @@ export const Image = styled.img`
   object-fit: cover;
   transition: filter 0.2s ease-in;
   :hover {
-    filter: brightness(1.2);
+    filter: brightness(1.05);
   }
 `;
 

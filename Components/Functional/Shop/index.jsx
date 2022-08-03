@@ -8,6 +8,7 @@ import {
   Wrapper,
 } from "Components/Styled/Shop";
 import image1 from "public/images/Shop/1.png";
+import Nav from "./Navigation";
 import image2 from "public/images/Shop/2.png";
 import image3 from "public/images/Shop/3.png";
 import SidebarSelectors from "./Sidebar";
@@ -54,7 +55,9 @@ const Shop = () => {
         </Sidebar>
         <List>
           <ProductList list={list}></ProductList>
-          <Navigation></Navigation>
+          <Navigation>
+            <Nav></Nav>
+          </Navigation>
         </List>
       </Wrapper>
     </Container>

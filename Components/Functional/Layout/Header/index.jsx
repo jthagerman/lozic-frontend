@@ -15,6 +15,7 @@ import MagGlass from "public/images/icons/mag.svg";
 import hamburgerMenu from "public/images/icons/hamburger.svg";
 import diamond from "public/images/icons/diamond.svg";
 import { useRouter } from "next/router";
+import NLink from "next/link";
 
 const Header = () => {
   const pathname = useRouter().pathname;
@@ -23,9 +24,9 @@ const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <a href="/">
+        <NLink href="/">
           <Logo src={LozicIcon.src} />
-        </a>
+        </NLink>
         <Links>
           <Link href="/blog">
             News
