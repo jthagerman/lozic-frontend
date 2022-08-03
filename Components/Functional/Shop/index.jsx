@@ -5,10 +5,12 @@ import {
   Sidebar,
   List,
   Navigation,
-} from "Components/Styled/Common/Shop";
+  Wrapper,
+} from "Components/Styled/Shop";
 import image1 from "public/images/Shop/1.png";
 import image2 from "public/images/Shop/2.png";
 import image3 from "public/images/Shop/3.png";
+import SidebarSelectors from "./Sidebar";
 
 const example = [
   {
@@ -46,11 +48,15 @@ const list = [...example, ...example, ...example, ...example];
 const Shop = () => {
   return (
     <Container>
-      <Sidebar />
-      <List>
-        <ProductList list={list}></ProductList>
-        <Navigation></Navigation>
-      </List>
+      <Wrapper>
+        <Sidebar>
+          <SidebarSelectors />
+        </Sidebar>
+        <List>
+          <ProductList list={list}></ProductList>
+          <Navigation></Navigation>
+        </List>
+      </Wrapper>
     </Container>
   );
 };

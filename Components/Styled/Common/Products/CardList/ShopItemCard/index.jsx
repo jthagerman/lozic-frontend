@@ -20,6 +20,8 @@ export const ImageWrapper = styled.div`
   background-repeat: no-repeat;
   user-drag: none;
   object-fit: cover;
+
+  overflow: hidden;
 `;
 export const Image = styled.img``;
 export const Category = styled.div`
@@ -82,7 +84,7 @@ export const PriceWrapper = styled.div`
   width: 100%;
   height: max-content;
 
-  margin: 0px 0px 18px 0px;
+  margin: 0px 0px 15px 0px;
   flex: 10;
   align-self: flex-end;
   justify-self: flex-end;

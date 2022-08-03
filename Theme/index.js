@@ -4,7 +4,9 @@ export const theme = {
   text: "#060809",
   grayLine: "#545454",
   grayBG: "#F5F5F5",
+  background: "#F5F5F5",
   backgroundOffset: "#ffffff",
   grayText: "#828384",
   blackBG: "#141414",
+  grayText: "#808080",
 };

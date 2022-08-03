@@ -57,6 +57,8 @@ export const Logo = styled.img`
   height: 18.82px;
   cursor: pointer;
   user-drag: none;
+  background-repeat: no-repeat;
+
   margin: 0px 0px 0px 20px;
 `;
 export const Link = styled.a`
@@ -65,6 +67,8 @@ export const Link = styled.a`
   text-decoration: none;
   cursor: pointer;
   margin: 0px 40px 0px 0px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Icons = styled.div`
@@ -73,6 +77,13 @@ export const Icons = styled.div`
   justify-content: center;
   margin-right: 17px;
   margin-bottom: 3px;
+`;
+export const Diamond = styled.img`
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 8px;
+  width: 8px;
+  align-self: center;
 `;
 
 export const Icon = styled.a`

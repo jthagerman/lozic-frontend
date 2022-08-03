@@ -22,13 +22,19 @@ const Contact = () => {
       ></TextHeader>
       <Form>
         <InputBoxes>
-          <Input type="text" placeholder="Full Name"></Input>
-          <Input type="text" placeholder="Car Name"></Input>
-          <Input type="text" placeholder="Full Name"></Input>
-          <Select placeholder="x">
-            <option value="" selected>
-              Select Service
-            </option>
+          <Input
+            type="text"
+            placeholder="Full Name"
+            onChange={() => {}}
+          ></Input>
+          <Input type="text" placeholder="Car Name" onChange={() => {}}></Input>
+          <Input
+            type="text"
+            placeholder="Full Name"
+            onChange={() => {}}
+          ></Input>
+          <Select placeholder="x" defaultValue="Select Service">
+            <option value="p"></option>
             <option value="x">-</option>
             <option value="y">-</option>
             <option value="z">-</option>
@@ -54,7 +60,7 @@ const Contact = () => {
           <label htmlFor="vehicle1">Button</label>
         </Box>
 
-        <TextArea>More Info</TextArea>
+        <TextArea value="More Info" onChange={() => {}}></TextArea>
         <ButtonWrapper>
           <Button>Contact</Button>
         </ButtonWrapper>
