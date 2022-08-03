@@ -28,7 +28,7 @@ export const Question = styled.div`
   }
   @media (max-width: ${breakpoints.largePhone}px) {
     font-size: 18px;
-    margin: 18px 20px 0px 28i lpx;
+    margin: 18px 20px 0px 28px;
   }
 `;
 export const LargeQ = styled.span`

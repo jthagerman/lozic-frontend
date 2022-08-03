@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import About from "Components/Functional/Home/About";
+import About from "Components/Functional/About";
 
 import Layout from "/Components/Functional/Layout/index.jsx";
 

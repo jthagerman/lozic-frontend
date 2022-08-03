@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 0px 91px 0px;
-  height: max-content;
+`;
+
+export const Cards = styled.div`
+  padding: 40px 0px 0px 0px;
 `;

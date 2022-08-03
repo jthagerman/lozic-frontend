@@ -13,9 +13,14 @@ export const Heading = styled.h1`
   font-size: 54px;
   padding: 0px;
   margin: 0px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   margin: 0px 15px;
+
+  span {
+    font-weight: 500;
+    color: ${(props) => props.theme.orange};
+  }
 
   @media (max-width: ${breakpoints.tablet}px) {
     font-size: 48px;

@@ -5,9 +5,10 @@ export const Container = styled.div`
   max-width: 1170px;
   position: relative;
   aspect-ratio: 3 / 1.2;
-
+  height: 1300px;
+  height: 100%;
   width: 100vw;
-  max-height: 400px;
+  max-height: 1200px;
 
   display: flex;
   flex-direction: column;
@@ -17,15 +18,21 @@ export const Container = styled.div`
 
 export const Image = styled.div`
   top: 0px;
-  bottom: 0px;
+  height: 100%;
   width: 100%;
   right: 0px;
-  position: absolute;
+  left: 0px;
+  min-height: 400px;
+  aspect-ratio: 3 / 1.2;
   background-image: url(${(props) => props.src});
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: ${breakpoints.tablet}px) {
+    min-height: 300px;
+  }
   @media (max-width: ${breakpoints.largePhone}px) {
     filter: brightnes(70%);
+    min-height: 200px;
   }
   @media (max-width: ${breakpoints.mobile}px) {
     filter: brightnes(40%);
