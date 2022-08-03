@@ -16,7 +16,7 @@ const ShopCard = ({ image, category, labels, link }) => {
       <Image loading="lazy" src={image} alt={category}></Image>
 
       <ItemList>
-        <Category>{category.toUpperCase()}</Category>
+        <Category>{category?.toUpperCase()}</Category>
         {labels &&
           labels.map((label, index) => {
             return (
