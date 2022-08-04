@@ -34,6 +34,7 @@ export const Grid = styled.div`
 `;
 export const Row = styled.div`
   display: contents;
+  user-select: none;
 `;
 
 export const Header = styled.div``;
@@ -56,18 +57,4 @@ export const Fill = styled.div`
   left: 0px;
   width: ${(props) => (props.percent ? `${props.percent}%` : "0%")};
   background: #f26a31;
-
-  animation: loadBar 0.2s ease-in;
-
-  @keyframes loadBar {
-    0% {
-      width: 0;
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-      width: ${(props) => (props.percent ? `${props.percent}%` : "0%")};
-    }
-  }
 `;
