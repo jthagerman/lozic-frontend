@@ -8,6 +8,7 @@ import {
   MobileMenu,
   Link,
   Diamond,
+  LogoWrapper,
 } from "Components/Styled/Layout/Header";
 import LozicIcon from "public/images/icons/Lozic.svg";
 import ShoppingCart from "public/images/icons/shoppingCart.svg";
@@ -16,18 +17,31 @@ import hamburgerMenu from "public/images/icons/hamburger.svg";
 import diamond from "public/images/icons/diamond.svg";
 import { useRouter } from "next/router";
 import NLink from "next/link";
+import React, { useEffect, useState } from "react";
 
-const Header = () => {
+const Header = ({ offset = 20 }) => {
   const pathname = useRouter().pathname;
+  const [atTop, setTop] = useState(offset !== 0 ? true : false);
 
-  console.log(pathname);
+  console.log(offset);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && offset !== 0) {
+      window.addEventListener("scroll", () =>
+        setTop(window.pageYOffset < offset)
+      );
+    }
+  }, []);
+
   return (
-    <Container>
+    <Container switch={atTop}>
       <Wrapper>
         <NLink href="/">
-          <Logo src={LozicIcon.src} />
+          <LogoWrapper>
+            <Logo src={LozicIcon.src} switch={atTop} />
+          </LogoWrapper>
         </NLink>
-        <Links>
+        <Links switch={atTop}>
           <Link href="/blog">
             News
             {pathname.includes("blog") && <Diamond src={diamond.src} />}
@@ -43,12 +57,12 @@ const Header = () => {
             {pathname.includes("contact") && <Diamond src={diamond.src} />}
           </Link>
           <Icons>
-            <Icon src={MagGlass.src}></Icon>
-            <Icon src={ShoppingCart.src}></Icon>
+            <Icon src={MagGlass.src} switch={atTop}></Icon>
+            <Icon src={ShoppingCart.src} switch={atTop}></Icon>
           </Icons>
         </Links>
         <MobileMenu>
-          <Icon src={hamburgerMenu.src}></Icon>
+          <Icon src={hamburgerMenu.src} switch={atTop}></Icon>
         </MobileMenu>
       </Wrapper>
     </Container>

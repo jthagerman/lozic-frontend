@@ -10,11 +10,13 @@ import {
   ImageWrapper,
   Icons,
   Wrapper,
-} from "Components/Styled/Common/Products/CardList/ShopItemCard";
+  Pi,
+  Cart,
+} from "Components/Styled/Common/Products/CardList/ShopItemCard/largeShopItemCard";
 import Heart from "Components/Functional/Common/Inputs/Heart/index.jsx";
 import ShoppingCart from "../../Inputs/ShoppingCart";
 
-const ShopItemCard = ({
+const LargeShopCard = ({
   like,
   image,
   price,
@@ -30,21 +32,27 @@ const ShopItemCard = ({
         {image && <Image loading="lazy" alt="description" src={image} />}
         {salePercent && <SaleBanner>-{salePercent}%</SaleBanner>}
         <Icons>
-          <Heart selected={like} />
-          <ShoppingCart />
+          <Heart selected={like} height={"24px"} width={"24px"} />
         </Icons>
       </ImageWrapper>
       <Wrapper>
+        <Icons>
+          <Cart>
+            <ShoppingCart height={"24px"} width={"24px"} />
+          </Cart>
+        </Icons>
         {category && <Category>{category.toUpperCase()}</Category>}
         {description && <Description href={link}>{description}</Description>}
 
         <PriceWrapper>
-          <Price>${price}</Price>
-          {originalPrice && <Sale>${originalPrice}</Sale>}
+          <Pi>
+            <Price>${price}</Price>
+            {originalPrice && <Sale>${originalPrice}</Sale>}
+          </Pi>
         </PriceWrapper>
       </Wrapper>
     </Container>
   );
 };
 
-export default ShopItemCard;
+export default LargeShopCard;

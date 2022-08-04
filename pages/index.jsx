@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <title>Lozic</title>
       </Head>
-      <Layout>
+      <Layout offset={0}>
         <HomePage />
       </Layout>
     </>

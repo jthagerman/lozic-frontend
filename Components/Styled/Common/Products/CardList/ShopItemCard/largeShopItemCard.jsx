@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  aspect-ratio: 1.9 / 2.9;
+  aspect-ratio: 37 / 43;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  height: 50%;
+  height: 60%;
   width: 100%;
   position: relative;
   display: grid;
@@ -32,7 +32,7 @@ export const Category = styled.div`
 `;
 export const Description = styled.a`
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: inherit;
   text-decoration: none;
@@ -42,20 +42,23 @@ export const Description = styled.a`
 `;
 export const Price = styled.div`
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
+  color: ${(props) => props.theme.orange};
 `;
 export const Sale = styled.s`
   color: rgba(122, 122, 122, 1);
   font-weight: 400;
   opacity: 0.5;
   font-size: 16px;
+
+  margin: 0px 0px 0px 10px;
 `;
 export const SaleBanner = styled.div`
   position: absolute;
-  top: 12px;
+  top: 15px;
   left: 0px;
   color: white;
-  padding: 2px 10px;
+  padding: 4px 10px;
   background-color: ${(props) => props.theme.orange};
   font-weight: 500;
   font-size: 17.8667px;
@@ -63,32 +66,38 @@ export const SaleBanner = styled.div`
 
 export const Icons = styled.div`
   position: absolute;
-  top: 12px;
-  right: 4px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px 0px;
+  top: 20px;
+  right: 15px;
+  bottom: 12px;
 `;
 
-export const Heart = styled;
+export const Cart = styled.div`
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+`;
 
 export const Wrapper = styled.div`
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   padding: 0px 12px;
+  position: relative;
 `;
 
-export const PriceWrapper = styled.div`
+export const Pi = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+`;
+export const PriceWrapper = styled.div`
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-end; */
+  justify-contents: flex-start;
   width: 100%;
   height: max-content;
-
   margin: 0px 0px 15px 0px;
   flex: 10;
-  align-self: flex-end;
-  justify-self: flex-end;
+  border: 1px solid pink;
 `;

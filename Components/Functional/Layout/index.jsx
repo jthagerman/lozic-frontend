@@ -3,10 +3,10 @@ import Content from "./Content";
 import Footer from "./Footer";
 import { Container } from "Components/Styled/Layout";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, offset }) => {
   return (
     <Container>
-      <Header></Header>
+      <Header offset={offset} />
       <Content>{children}</Content>
 
       <Footer></Footer>

@@ -12,16 +12,13 @@ export const Container = styled.header`
   top: 0px;
 
   z-index: 100;
-  height: 80px;
+  height: 60px;
   left: 0px;
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(4, 4, 4, 1) 70%,
-    rgba(4, 4, 4, 0) 71%
-  );
+  background: ${(props) => (props.switch ? "transparent" : "rgba(4, 4, 4, 1)")};
+  transition: all 0.15s linear;
 `;
 
 export const Wrapper = styled.div`
@@ -35,11 +32,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Links = styled.div`
-  color: white;
+  color: ${(props) => (props.switch ? "rgba(4, 4, 4, 1)" : "white")};
   cursor: pointer;
   text-decoration: none;
   display: flex;
   flex-direction: row;
+  transition: color 0.15s linear;
   @media (max-width: ${breakpoints.largePhone}px) {
     display: none;
   }
@@ -52,18 +50,10 @@ export const MobileMenu = styled.div`
     display: none;
   }
 `;
-export const Logo = styled.img`
-  width: 60.12px;
-  height: 18.82px;
-  cursor: pointer;
-  user-drag: none;
-  background-repeat: no-repeat;
 
-  margin: 0px 0px 0px 20px;
-`;
 export const Link = styled.a`
   font-size: 16px;
-  color: white;
+  color: inherit;
   text-decoration: none;
   cursor: pointer;
   margin: 0px 40px 0px 0px;
@@ -92,10 +82,41 @@ export const Icon = styled.a`
   mask-position: center;
   mask-repeat: no-repeat;
   width: 20px;
+  height: 20px;
   cursor: pointer;
   user-drag: none;
-  background-color: white;
+  transition: all 0.15s linear;
+  background-color: ${(props) => (props.switch ? "rgba(4, 4, 4, 1)" : "white")};
   margin: 0px 15px 0px 0px;
 
   object-fit: cover;
+`;
+
+export const LogoWrapper = styled.div`
+  width: 60.12px;
+  height: 18.82px;
+  position: relative;
+  margin: 0px 0px 0px 20px;
+`;
+
+export const Logo = styled.div`
+  mask-image: url("${(props) => props.src}");
+  background-repeat: no-repeat;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  mask-size: contain;
+
+  cursor: pointer;
+  user-drag: none;
+  background-repeat: no-repeat;
+
+  transition: all 0.15s linear;
+  background-color: ${(props) => (props.switch ? "rgba(4, 4, 4, 1)" : "white")};
 `;

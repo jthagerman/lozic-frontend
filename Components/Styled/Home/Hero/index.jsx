@@ -4,15 +4,17 @@ import breakpoints from "Context/Screen";
 export const Image = styled.img`
   /* aspect-ratio: 370 / 287; */
   display: flex;
-  width: 100%;
-  height: 40.75%;
+  /* width: 100%; */
+  /* height: 40.75%; */
+  max-width: 100%;
+  max-height: 90%;
   background-repeat: no-repeat;
   user-drag: none;
   object-fit: cover;
   transition: filter 0.2s ease-in;
 
   position: relative;
-  max-height: 700px;
+  max-height: 678px;
   :hover {
     filter: brightness(1.2);
   }
@@ -119,6 +121,7 @@ export const Row = styled.div`
   flex-wrap: wrap;
   flex-grow: 1;
   width: 100%;
+  max-width: 1100px;
   padding: 30px 0px;
   border-bottom: 1px solid #e4e4e4;
 
