@@ -1,19 +1,16 @@
+import { Container, Box } from "Components/Styled/Product/Details";
+import Information from "./Information";
+
 const Details = () => {
   return (
-    <div>
-      <div>
+    <Container>
+      <Box>
         <div>image</div>
-        <div>
-          Info
-          <div>
-            Name <span>Price</span>
-          </div>
-          <div>DESCRIPTION</div>
-          <div>Selectors</div>
-          <div>button</div>
-        </div>
-      </div>
-    </div>
+      </Box>
+      <Box>
+        <Information />
+      </Box>
+    </Container>
   );
 };
 

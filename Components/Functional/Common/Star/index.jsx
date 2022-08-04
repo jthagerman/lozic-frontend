@@ -8,7 +8,7 @@ const Star = ({ filled }) => {
     );
   } else {
     return (
-      <StarImage draggable={false} alt={"empty star"} src={staEmpty.src} />
+      <StarImage draggable={false} alt={"empty star"} src={starEmpty.src} />
     );
   }
 };

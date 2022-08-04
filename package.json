@@ -2,6 +2,9 @@
   "name": "lozic-frontend",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "John T. Hagerman"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

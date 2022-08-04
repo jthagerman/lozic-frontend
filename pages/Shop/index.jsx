@@ -15,5 +15,3 @@ export default function ShopPage() {
     </>
   );
 }
-
-export const getServerSideProps = () => {};

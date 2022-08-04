@@ -8,13 +8,19 @@ const Checkbox = ({
   labelMarginLeft,
   quanity,
   checked = false,
+  radioButton = false,
   callback = () => {
     return "";
   },
 }) => {
   const [isChecked, setChecked] = useState(() => checked);
   return (
-    <div>
+    <div
+      onClick={() => {
+        callback();
+        setChecked(!isChecked);
+      }}
+    >
       <Box
         padding={padding}
         margin={margin}
@@ -22,6 +28,7 @@ const Checkbox = ({
         fontSize={fontSize}
       >
         <Check
+          radioButton={radioButton}
           checked={isChecked}
           onClick={() => {
             callback();

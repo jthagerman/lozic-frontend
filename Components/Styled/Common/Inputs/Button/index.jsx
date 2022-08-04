@@ -18,9 +18,9 @@ export const Button = styled.a`
   background: linear-gradient(98.35deg, #f26a31 85.11%, #a7320a 118.98%);
   box-shadow: 0px 0px 18px rgba(250, 255, 1, 0.32);
   box-sizing: border-box;
-  transition: opacity 0.2s ease-in;
+  transition: all 0.2s ease-in;
   :hover {
-    opacity: 0.85;
+    filter: brightness(1.15);
   }
 
   @media (max-width: ${breakpoints.largePhone}px) {

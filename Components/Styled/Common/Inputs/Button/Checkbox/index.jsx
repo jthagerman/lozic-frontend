@@ -8,6 +8,7 @@ export const Check = styled.div`
   box-shadow: inset 0px 0px 0px 3px ${(props) => props.theme.background};
   background-color: ${(props) =>
     props.checked ? props.theme.orange : "transparent"};
+  border-radius: ${(props) => (props.radioButton ? "100px" : "0px")};
   opacity: ${(props) => (props.checked ? 0.9 : 1)};
 `;
 
@@ -20,6 +21,7 @@ export const Box = styled.div`
   display: flex;
   margin: 5px 0px;
   align-items: center;
+  cursor: pointer;
 
   label {
     fontsize: ${(props) => (props.fontSize ? props.fontSize : "16px")};

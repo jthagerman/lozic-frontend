@@ -5,8 +5,6 @@ import {
 } from "Components/Styled/Shop/Sidebar/Category";
 import Checkbox from "Components/Functional/Common/Inputs/Checkbox";
 const Category = ({ title, items }) => {
-  const item = { name: "Accent", quanity: 80, callback: () => {} };
-
   return (
     <Container>
       <Title>{title}</Title>
