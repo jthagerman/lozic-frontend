@@ -43,6 +43,7 @@ export const Section = styled.div`
 export const BigText = styled.div`
   font-size: 54px;
   font-weight: 700px;
+  font-family: "CabinetGrotesk-Bold";
 
   @media (max-width: ${breakpoints.laptop}px) {
     font-size: 48px;
@@ -58,6 +59,7 @@ export const BigText = styled.div`
 export const Number = styled.div`
   font-size: 54px;
   font-weight: 700px;
+  font-family: "CabinetGrotesk-Bold";
   @media (max-width: ${breakpoints.laptop}px) {
     font-size: 48px;
   }

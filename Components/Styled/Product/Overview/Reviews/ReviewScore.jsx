@@ -12,6 +12,7 @@ export const Container = styled.div`
 
 export const Aggregate = styled.div`
   font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 54px;
 `;
 
@@ -30,6 +31,7 @@ export const Grid = styled.div`
   grid-auto-rows: 1fr;
   gap: 10px 0px;
   font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 16px;
 `;
 export const Row = styled.div`

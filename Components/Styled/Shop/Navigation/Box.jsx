@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.a`
+  font-family: "CabinetGrotesk-Bold";
   user-select: none;
   height: 47px;
   width: 47px;

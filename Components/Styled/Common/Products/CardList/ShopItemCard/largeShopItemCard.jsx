@@ -42,6 +42,7 @@ export const Description = styled.a`
 `;
 export const Price = styled.div`
   font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 18px;
   color: ${(props) => props.theme.orange};
 `;

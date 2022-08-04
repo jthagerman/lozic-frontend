@@ -19,6 +19,7 @@ export const Container = styled.button`
       return `1px solid #dbdbdb;`;
     } else return `1px solid #F26A31`;
   }};
+  font-family: "CabinetGrotesk-Bold";
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;

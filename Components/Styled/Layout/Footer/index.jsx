@@ -126,9 +126,10 @@ export const LinkColumn = styled.ul`
   min-width: 120px;
 `;
 export const LinkLabel = styled.label`
-  font-family: "RedHatDisplay-Bold" serif;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 16px;
   font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   margin: 0px 0px 10px 0px;
 `;
 export const LinkItem = styled.a`

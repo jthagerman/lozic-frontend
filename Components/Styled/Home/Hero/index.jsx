@@ -55,6 +55,7 @@ export const Text = styled.h1`
   flex-direction: column;
   font-style: normal;
   font-weight: 700;
+  font-family: "CabinetGrotesk-Bold";
   font-size: 32px;
   line-height: 40px;
 
