@@ -1,20 +1,24 @@
 import { Container, TabBar, Tab } from "Components/Styled/Product/Overview";
 import { useState } from "react";
-import Description from "Components/Styled/Product/Overview/Description";
-
-const Overview = () => {
+import Description from "Components/Functional/Product/Overview/Description";
+import AdditionalInfo from "./AdditionalInfo";
+import Reviews from "./Reviews";
+const Overview = ({ data }) => {
   const [selected, setSelected] = useState(() => "Description");
+
+  const { description, reviews } = data;
+  const reviewsNum = reviews.comments.length ?? 0;
 
   const Selected = () => {
     switch (selected) {
       case "Description": {
-        return <Description />;
+        return <Description {...description} />;
       }
       case "Reviews": {
-        return <div>reviews</div>;
+        return <Reviews {...reviews} />;
       }
       case "Additional Information": {
-        return <div>add info</div>;
+        return <AdditionalInfo />;
       }
     }
   };
@@ -31,13 +35,13 @@ const Overview = () => {
           border={selected === "Reviews"}
           onClick={() => setSelected("Reviews")}
         >
-          Reviews
+          Reviews ({reviewsNum})
         </Tab>
         <Tab
           border={selected === "Additional Information"}
           onClick={() => setSelected("Additional Information")}
         >
-          Additional Information
+          Additional Info
         </Tab>
       </TabBar>
       <Selected />

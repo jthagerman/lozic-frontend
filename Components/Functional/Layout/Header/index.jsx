@@ -18,10 +18,12 @@ import diamond from "public/images/icons/diamond.svg";
 import { useRouter } from "next/router";
 import NLink from "next/link";
 import React, { useEffect, useState } from "react";
+import MobileMenuView from "./MobileMenu";
 
 const Header = ({ offset = 20 }) => {
   const pathname = useRouter().pathname;
   const [atTop, setTop] = useState(offset !== 0 ? true : false);
+  const [open, setOpen] = useState(() => false);
 
   console.log(offset);
 
@@ -61,9 +63,11 @@ const Header = ({ offset = 20 }) => {
             <Icon src={ShoppingCart.src} switch={atTop}></Icon>
           </Icons>
         </Links>
-        <MobileMenu>
+
+        <MobileMenu onClick={() => setOpen(!open)}>
           <Icon src={hamburgerMenu.src} switch={atTop}></Icon>
         </MobileMenu>
+        {open && <MobileMenuView />}
       </Wrapper>
     </Container>
   );

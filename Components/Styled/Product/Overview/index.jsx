@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  min-height: 300px;
+`;
 export const TabBar = styled.div`
   width: 100%;
   box-sizing: border-box;
@@ -15,6 +17,7 @@ export const Tab = styled.div`
   margin: -4px 0px 0px 0px;
   padding: 10px 20px;
   cursor: pointer;
+  user-select: none;
 
   transition: border 0.2s ease-in;
 

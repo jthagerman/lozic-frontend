@@ -10,7 +10,7 @@ export const Container = styled.header`
   user-select: none;
   user-drag: none;
   top: 0px;
-
+  position: relative;
   z-index: 100;
   height: 60px;
   left: 0px;
@@ -38,15 +38,16 @@ export const Links = styled.div`
   display: flex;
   flex-direction: row;
   transition: color 0.15s linear;
-  @media (max-width: ${breakpoints.largePhone}px) {
+  @media (max-width: ${breakpoints.largePhone - 50}px) {
     display: none;
   }
 `;
 
 export const MobileMenu = styled.div`
+  position: relative;
   display: flex;
   margin-right: 15px;
-  @media (min-width: ${breakpoints.largePhone}px) {
+  @media (min-width: ${breakpoints.largePhone - 50}px) {
     display: none;
   }
 `;
