@@ -10,10 +10,7 @@ const Navigation = ({ pageNumber = 0, maxPages = 5, callback }) => {
   if (maxPages <= 1) return null;
   let a = [1, 2, 3, 4, 5];
 
-  console.log(currentPage);
-
   const navigate = (direction) => {
-    console.log("cl");
     switch (direction) {
       case "right": {
         if (currentPage <= maxPages) setCurrentPage((prev) => prev + 1);

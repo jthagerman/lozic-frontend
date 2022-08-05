@@ -1,11 +1,12 @@
 import { Container, Box } from "Components/Styled/Product/Details";
 import Information from "./Information";
+import ImageCarousel from "./ImageCarousel";
 
 const Details = () => {
   return (
     <Container>
       <Box>
-        <div>image</div>
+        <ImageCarousel />
       </Box>
       <Box>
         <Information />

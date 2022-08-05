@@ -8,16 +8,30 @@ import {
   Sale,
   Row,
   Message,
+  Controls,
+  Nav,
+  Icon,
 } from "Components/Styled/Home/Hero";
 import HeroImage from "public/images/icons/Home/hero.png";
 import Button from "Components/Functional/Common/Inputs/Button/Button";
+import left from "public/images/icons/left.svg";
+import right from "public/images/icons/right.svg";
 
 const Hero = () => {
   return (
     <Container>
       <Wrapper>
         <Image loading="lazy" src={HeroImage.src}></Image>
+
         <Overlay>
+          <Controls>
+            <Nav>
+              <Icon src={left.src} />
+            </Nav>
+            <Nav src={right.src}>
+              <Icon src={right.src} />
+            </Nav>
+          </Controls>
           <Text>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -28,6 +42,7 @@ const Hero = () => {
           </Text>
         </Overlay>
       </Wrapper>
+
       <Row>
         <Sale>
           <Orange>10$</Orange>On Sale!

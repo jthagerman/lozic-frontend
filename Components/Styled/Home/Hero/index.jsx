@@ -44,6 +44,7 @@ export const Overlay = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 30px;
   @media (max-width: ${breakpoints.largePhone}px) {
     padding: 4%;
@@ -144,5 +145,51 @@ export const Message = styled.div`
   @media (max-width: ${breakpoints.largePhone}px) {
     font-size: 16px;
     min-width: 200px;
+  }
+`;
+
+export const Controls = styled.div`
+  height: 46px;
+
+  position: absolute;
+  right: 100px;
+  bottom: 15%;
+  display: flex;
+  flex-direction: row;
+  gap: 0px 20px;
+`;
+
+export const Icon = styled.div`
+  height: 17px;
+  width: 8px;
+  mask-image: url("${(props) => props.src}");
+  background-repeat: no-repeat;
+  mask-position: center;
+  background-color: white;
+  transtion: all 0.2s ease-in;
+  mask-repeat: no-repeat;
+`;
+
+export const Nav = styled.button`
+  marging: 0px 10px 0px 0px;
+  height: 46px;
+  outline: none;
+  width: 46px;
+  border-radius: 50px;
+  border: 2.66667px solid #ffffff;
+  background: transparent;
+  opacity: 0.5;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transtion: all 0.2s ease-in;
+  :hover {
+    background-color: white;
+    opacity: 0.9;
+
+    ${Icon} {
+      background-color: gray;
+      transform: scale(1.2);
+    }
   }
 `;

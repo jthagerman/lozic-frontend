@@ -9,6 +9,8 @@ import {
   Link,
   Diamond,
   LogoWrapper,
+  Search,
+  DivWrap,
 } from "Components/Styled/Layout/Header";
 import LozicIcon from "public/images/icons/Lozic.svg";
 import ShoppingCart from "public/images/icons/shoppingCart.svg";
@@ -24,8 +26,6 @@ const Header = ({ offset = 20 }) => {
   const pathname = useRouter().pathname;
   const [atTop, setTop] = useState(offset !== 0 ? true : false);
   const [open, setOpen] = useState(() => false);
-
-  console.log(offset);
 
   useEffect(() => {
     if (typeof window !== "undefined" && offset !== 0) {
@@ -58,10 +58,16 @@ const Header = ({ offset = 20 }) => {
             Contact
             {pathname.includes("contact") && <Diamond src={diamond.src} />}
           </Link>
-          <Icons>
-            <Icon src={MagGlass.src} switch={atTop}></Icon>
-            <Icon src={ShoppingCart.src} switch={atTop}></Icon>
-          </Icons>
+
+          <DivWrap>
+            <Icons>
+              <form>
+                <Search placeholder="Search Lozic.com" />
+              </form>
+              <Icon src={MagGlass.src} switch={atTop}></Icon>
+              <Icon src={ShoppingCart.src} switch={atTop}></Icon>
+            </Icons>
+          </DivWrap>
         </Links>
 
         <MobileMenu onClick={() => setOpen(!open)}>

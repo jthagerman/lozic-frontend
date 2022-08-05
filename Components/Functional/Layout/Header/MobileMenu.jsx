@@ -9,8 +9,8 @@ const MobileMenu = () => {
   return (
     <Container>
       <Links>
-        <Input placeholder="search"></Input>
-        <Link href="/chart">Chart</Link>
+        <Input placeholder="Search Lozic.com"></Input>
+        <Link href="/chart">Cart</Link>
         <Link href="/blog">News</Link>
         <Link href="/shop">Shop</Link>
         <Link href="/about">About</Link>

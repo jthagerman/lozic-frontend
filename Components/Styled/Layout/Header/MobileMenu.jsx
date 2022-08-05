@@ -27,7 +27,7 @@ export const Link = styled.a`
   color: inherit;
   text-decoration: none;
   font-size: 20px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 10px;
 `;
 
 export const Links = styled.div`
@@ -44,6 +44,7 @@ export const Input = styled.input`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  border-radius: 40px;
 
   color: #777777;
   ::placeholder {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.div`
   max-width: 1175px;
@@ -8,4 +9,8 @@ export const Container = styled.div`
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
   gap: 50px 0px;
+
+  @media (max-width: ${breakpoints.content + 100}px) {
+    padding: 0px 25px;
+  }
 `;

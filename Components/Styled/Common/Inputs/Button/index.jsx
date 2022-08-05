@@ -3,7 +3,7 @@ import breakpoints from "Context/Screen";
 
 export const Button = styled.a`
   background-color: ${(props) => props.theme.orange};
-  height: 48px;
+  height: ${(props) => (props.height ? props.height : "48px")};
   outline: none;
   border: none;
   color: white;

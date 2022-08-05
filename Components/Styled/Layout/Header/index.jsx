@@ -60,14 +60,22 @@ export const Link = styled.a`
   margin: 0px 40px 0px 0px;
   display: flex;
   flex-direction: column;
-`;
 
+  transition: color 0.15s linear;
+  :hover {
+    color: ${(props) => props.theme.orange};
+  }
+`;
+export const DivWrap = styled.div`
+  width: 80px;
+`;
 export const Icons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-right: 17px;
   margin-bottom: 3px;
+  position: absolute;
 `;
 export const Diamond = styled.img`
   background-repeat: no-repeat;
@@ -83,12 +91,18 @@ export const Icon = styled.a`
   mask-position: center;
   mask-repeat: no-repeat;
   width: 20px;
+  position: relative;
   height: 20px;
   cursor: pointer;
   user-drag: none;
   transition: all 0.15s linear;
   background-color: ${(props) => (props.switch ? "rgba(4, 4, 4, 1)" : "white")};
   margin: 0px 15px 0px 0px;
+
+  transition: background-color 0.15s linear;
+  :hover {
+    background-color: ${(props) => props.theme.orange};
+  }
 
   object-fit: cover;
 `;
@@ -120,4 +134,37 @@ export const Logo = styled.div`
 
   transition: all 0.15s linear;
   background-color: ${(props) => (props.switch ? "rgba(4, 4, 4, 1)" : "white")};
+`;
+
+export const Search = styled.input.attrs({ type: "search" })`
+  cursor: pointer;
+  width: 280px;
+  position: absolute;
+  right: 45px;
+  top: -3px;
+  font-size: 1rem;
+  border-radius: 20px;
+  width: 30px;
+  height: 40px;
+  width: 0px;
+  opacity: 0;
+  border: none;
+  padding: 0px 10px 0px 15px;
+  z-index: 101;
+  height: 30px;
+  background-color: transparent;
+
+  opacity: 1;
+  :focus {
+    width: 400px;
+    background-color: white;
+    transition: background-color, width 0.15s;
+    opacity: 1;
+    margin-left: 0px;
+  }
+  :focus,
+  input:focus {
+    outline: none;
+    outline: 1px solid gray;
+  }
 `;

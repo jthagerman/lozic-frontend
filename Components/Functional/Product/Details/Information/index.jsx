@@ -1,5 +1,12 @@
-import { Container } from "Components/Styled/Product/Details/Information";
+import {
+  Container,
+  Checkout,
+  Inputs as InputsWrap,
+} from "Components/Styled/Product/Details/Information";
 import Header from "Components/Functional/Product/Details/Information/Header";
+import Button from "Components/Functional/Common/Inputs/Button/Button";
+import Inputs from "./Inputs";
+import Quanity from "./Quantity";
 const Information = () => {
   const example = {
     title: "15 Sticker Pack",
@@ -9,6 +16,18 @@ const Information = () => {
   return (
     <Container>
       <Header {...example} />
+
+      <InputsWrap>
+        <Inputs title={"Sizes"} />
+        <Inputs radio={true} direction={"row"} title={"Options"} flex={2} />
+      </InputsWrap>
+
+      <Checkout>
+        <Quanity />
+        <Button width="300px" height="60px">
+          Checkout
+        </Button>
+      </Checkout>
     </Container>
   );
 };

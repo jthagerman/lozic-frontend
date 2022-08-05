@@ -4,7 +4,7 @@ import breakpoints from "Context/Screen";
 export const Footer = styled.footer`
   background-color: #060809;
   color: white;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
