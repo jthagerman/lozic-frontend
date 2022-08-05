@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.div`
   height: 100%;
@@ -6,6 +7,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  @media (max-width: ${breakpoints.tablet}px) {
+    max-width: 100vw;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -19,6 +23,10 @@ export const ImageWrapper = styled.div`
 
   flex: 1;
   postion: relative;
+  @media (max-width: ${breakpoints.largePhone}px) {
+    margin: 0px;
+    width: 100vw;
+  }
 `;
 
 export const Image = styled.img`
@@ -47,6 +55,7 @@ export const Dot = styled.div`
   height: 12px;
   width: 12px;
   border-radius: 10px;
+  margin: 5px 0px 0px 0px;
   background-color: #cccccc;
 `;
 export const Icon = styled.img``;

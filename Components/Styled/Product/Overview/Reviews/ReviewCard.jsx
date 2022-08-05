@@ -1,7 +1,14 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.div`
   max-width: 570px;
+  min-width: 300px;
+  @media (max-width: ${breakpoints.largePhone}px) {
+    min-width: 200px;
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 export const Icon = styled.img`

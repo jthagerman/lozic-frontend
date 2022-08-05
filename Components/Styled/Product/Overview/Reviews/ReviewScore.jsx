@@ -1,19 +1,46 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.div`
   flex: 1;
   background: white;
   display: flex;
   flex-direction: column;
-  margin: 0px 30px 0px 0px;
+  margin: 10px 30px 20px 0px;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0px 0px 10px 0px;
+  max-height: 300px;
+  min-width: 400px;
+
+  @media (max-width: ${breakpoints.largePhone}px) {
+    min-width: 300px;
+    max-width: 100%;
+    width: 100%;
+  }
+  @media (max-width: ${breakpoints.mobile}px) {
+    min-width: 200px;
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 export const Aggregate = styled.div`
   font-weight: 700;
   font-family: "CabinetGrotesk-Bold";
   font-size: 54px;
+  align-self: center;
+  text-align: center;
+
+  @media (max-width: ${breakpoints.tablet}px) {
+    font-size: 48px;
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 38px;
+  }
+  @media (max-width: ${breakpoints.mobile}px) {
+    font-size: 30px;
+  }
 `;
 
 export const Stars = styled.div`
@@ -23,7 +50,12 @@ export const Stars = styled.div`
   margin: 0px 0px 0px 0px;
 `;
 
-export const Text = styled.div``;
+export const Text = styled.div`
+  @media (max-width: ${breakpoints.largePhone}px) {
+    font-size: 14px;
+    margin: 4px 0px;
+  }
+`;
 
 export const Grid = styled.div`
   display: grid;
@@ -33,6 +65,11 @@ export const Grid = styled.div`
   font-weight: 700;
   font-family: "CabinetGrotesk-Bold";
   font-size: 16px;
+
+  @media (max-width: ${breakpoints.largePhone}px) {
+    gap: 8px 0px;
+    font-size: 14px;
+  }
 `;
 export const Row = styled.div`
   display: contents;
@@ -50,6 +87,17 @@ export const Bar = styled.div`
   background: #e8e8e8;
   margin: 0px 10px;
   position: relative;
+
+  @media (max-width: ${breakpoints.tablet}px) {
+    width: 200px;
+  }
+  @media (max-width: ${breakpoints.largePhone}px) {
+    width: 150px;
+  }
+  @media (max-width: ${breakpoints.mobile}px) {
+    width: 100px;
+    height: 16px;
+  }
 `;
 export const Fill = styled.div`
   position: absolute;

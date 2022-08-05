@@ -18,7 +18,6 @@ const ReviewScore = () => {
   return (
     <Container>
       <Header>
-        {" "}
         <Aggregate>{score.toFixed(1)}</Aggregate>
         <Stars>
           {new Array(score).fill("*").map((el, index) => {

@@ -4,10 +4,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   flex: ${(props) => (props.flex ? props.flex : 1)};
+  width: max-content;
 `;
 
 export const Options = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: ${(props) => (props.direction ? props.direction : "column")};
 
   > * {

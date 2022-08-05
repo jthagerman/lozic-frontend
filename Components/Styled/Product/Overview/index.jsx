@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "Context/Screen";
 
 export const Container = styled.div`
   min-height: 300px;
@@ -23,5 +24,12 @@ export const Tab = styled.div`
 
   :hover {
     border-top: 4px solid ${(props) => props.theme.orange};
+  }
+
+  @media (max-width: ${breakpoints.tablet}px) {
+  }
+  @media (max-width: ${breakpoints.mobile}px) {
+    font-size: 14px;
+    padding: 5px 10px;
   }
 `;
