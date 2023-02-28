@@ -17,24 +17,25 @@ const ImageCarousel = () => {
   return (
     <Container>
       <ImageWrapper>
-        <Image src={product.src} draggable="false" />
-        <Left>
-          <Arrow>
-            <Icon src={left.src} draggable="false" />
-          </Arrow>
-        </Left>
-        <Right>
-          <Arrow>
-            <Icon src={right.src} draggable="false" />
-          </Arrow>
-        </Right>
+          <Image src={"https://i.ytimg.com/vi/Ds__ynZyt_E/maxresdefault.jpg"} draggable={false} />
+
+          {/*<Left>*/}
+        {/*  <Arrow>*/}
+        {/*    <Icon src={left.src} draggable="false" />*/}
+        {/*  </Arrow>*/}
+        {/*</Left>*/}
+        {/*<Right>*/}
+        {/*  <Arrow>*/}
+        {/*    <Icon src={right.src} draggable="false" />*/}
+        {/*  </Arrow>*/}
+        {/*</Right>*/}
       </ImageWrapper>
 
-      <Indicators>
-        <Dot></Dot>
-        <Dot></Dot>
-        <Dot></Dot>
-      </Indicators>
+      {/*<Indicators>*/}
+      {/*  <Dot></Dot>*/}
+      {/*  <Dot></Dot>*/}
+      {/*  <Dot></Dot>*/}
+      {/*</Indicators>*/}
     </Container>
   );
 };

@@ -13,8 +13,6 @@ export const Container = styled.div`
 export const Box = styled.div`
   flex: 1;
   margin: 10px;
-  min-width: 450px;
-  display: grid;
   @media (max-width: ${breakpoints.largePhone}px) {
     margin: 0px;
     min-width: 250px;

@@ -59,15 +59,15 @@ const Header = ({ offset = 20 }) => {
             {pathname.includes("contact") && <Diamond src={diamond.src} />}
           </Link>
 
-          <DivWrap>
-            <Icons>
-              <form>
-                <Search placeholder="Search Lozic.com" />
-              </form>
-              <Icon src={MagGlass.src} switch={atTop}></Icon>
-              <Icon src={ShoppingCart.src} switch={atTop}></Icon>
-            </Icons>
-          </DivWrap>
+          {/*<DivWrap>*/}
+          {/*  <Icons>*/}
+          {/*    <form>*/}
+          {/*      <Search placeholder="Search Lozic.com" />*/}
+          {/*    </form>*/}
+          {/*    /!*<Icon src={MagGlass.src} switch={atTop}></Icon>*!/*/}
+          {/*    /!*<Icon src={ShoppingCart.src} switch={atTop}></Icon>*!/*/}
+          {/*  </Icons>*/}
+          {/*</DivWrap>*/}
         </Links>
 
         <MobileMenu onClick={() => setOpen(!open)}>

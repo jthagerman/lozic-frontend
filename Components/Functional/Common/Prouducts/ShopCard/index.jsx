@@ -25,18 +25,18 @@ const ShopItemCard = ({
   link,
 }) => {
   return (
-    <Container>
+    <Container href={link}>
       <ImageWrapper>
         {image && <Image loading="lazy" alt="description" src={image} />}
         {salePercent && <SaleBanner>-{salePercent}%</SaleBanner>}
-        <Icons>
-          <Heart selected={like} />
-          <ShoppingCart />
-        </Icons>
+        {/*<Icons>*/}
+        {/*  <Heart selected={like} />*/}
+        {/*  <ShoppingCart />*/}
+        {/*</Icons>*/}
       </ImageWrapper>
       <Wrapper>
         {category && <Category>{category.toUpperCase()}</Category>}
-        {description && <Description href={link}>{description}</Description>}
+        {description && <Description>{description}</Description>}
 
         <PriceWrapper>
           <Price>${price}</Price>

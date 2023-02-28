@@ -37,12 +37,12 @@ const Overview = ({ data }) => {
         >
           Reviews ({reviewsNum})
         </Tab>
-        <Tab
-          border={selected === "Additional Information"}
-          onClick={() => setSelected("Additional Information")}
-        >
-          Additional Info
-        </Tab>
+        {/*<Tab*/}
+        {/*  border={selected === "Additional Information"}*/}
+        {/*  onClick={() => setSelected("Additional Information")}*/}
+        {/*>*/}
+        {/*  Additional Info*/}
+        {/*</Tab>*/}
       </TabBar>
       <Selected />
     </Container>

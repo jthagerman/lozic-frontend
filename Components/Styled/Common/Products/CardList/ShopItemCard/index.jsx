@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.a`
   aspect-ratio: 1.9 / 2.9;
   background-color: white;
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
   :hover {
     transform: scale(1.01);
   }
@@ -30,12 +32,10 @@ export const Category = styled.div`
   line-height: 15px;
   margin: 2px 0px 7px 0px;
 `;
-export const Description = styled.a`
+export const Description = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: inherit;
-  text-decoration: none;
   /* :hover {
     text-decoration: underline;
   } */

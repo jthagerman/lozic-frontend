@@ -16,6 +16,7 @@ const Checkbox = ({
   const [isChecked, setChecked] = useState(() => checked);
   return (
     <div
+        style={{ paddingTop: 6, paddingBottom: 6 }}
       onClick={() => {
         callback();
         setChecked(!isChecked);

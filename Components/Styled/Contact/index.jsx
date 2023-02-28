@@ -69,13 +69,12 @@ export const Select = styled.select`
 `;
 
 export const TextArea = styled.textarea`
-  font-family: "RedHatDisplay-Bold" serif;
   font-family: inherit;
   resize: none;
   height: 200px;
   outline: none;
   border: 1px solid rgba(219, 219, 219, 1);
-  padding: 5px 10px;
+  padding: 15px;
   margin: 5px 0px 0px 0px;
   font-style: normal;
   font-weight: 400;

@@ -20,27 +20,19 @@ import React from "react";
 
 const links = [
   {
-    columnName: "Page Name",
+    columnName: "Shopping",
     pages: [
-      { title: "Page Name Here", link: "/" },
-      { title: "Page Name Here", link: "/" },
-      { title: "Page Name Here", link: "/" },
+      { title: "ECU Tunes", link: "/shop" },
+      { title: "TCU Tunes", link: "/shop" },
+      { title: "Performance Parts", link: "/shop" },
     ],
   },
   {
-    columnName: "Page Name",
+    columnName: "Company",
     pages: [
-      { title: "Page Name Here", link: "/" },
-      { title: "Page Name Here", link: "/" },
-    ],
-  },
-  {
-    columnName: "Page Name",
-    pages: [
-      { title: "Page Name Here", link: "/" },
-      { title: "Page Name Here", link: "/" },
-      { title: "Page Name Here", link: "/" },
-      { title: "Page Name Here", link: "/" },
+      { title: "About US", link: "/about" },
+      { title: "News", link: "/blog" },
+      { title: "Contact", link: "/contact" },
     ],
   },
 ];
@@ -48,15 +40,15 @@ const links = [
 const PageFooter = () => {
   return (
     <Footer>
-      <Row border={true}>
-        <Section>
-          <Title>We are Lozic</Title>
-          <Subtitle>
-            We design and create products with fully backed research ready for
-            the world to enjoy and use.
-          </Subtitle>
-        </Section>
-      </Row>
+      {/*<Row border={true}>*/}
+      {/*  <Section>*/}
+      {/*    <Title>We are Lozic</Title>*/}
+      {/*    <Subtitle>*/}
+      {/*      We design and create products with fully backed research ready for*/}
+      {/*      the world to enjoy and use.*/}
+      {/*    </Subtitle>*/}
+      {/*  </Section>*/}
+      {/*</Row>*/}
 
       <Row>
         <Section>
@@ -68,10 +60,10 @@ const PageFooter = () => {
           </Subtitle>
           <Wrapper>
             <Input type="text" placeholder="Email" />
-            <Button>Read More</Button>
+            <Button>Stay Informed</Button>
           </Wrapper>
         </Section>
-        <Section>
+        <Section alignRight>
           <Links>
             {links.map((element, index) => {
               return (
@@ -91,7 +83,7 @@ const PageFooter = () => {
         </Section>
       </Row>
       <Row border={true} padding={"0px"}>
-        <Copyright>© Lozic 2022</Copyright>
+        <Copyright>© Lozic {new Date().getFullYear()}</Copyright>
       </Row>
     </Footer>
   );

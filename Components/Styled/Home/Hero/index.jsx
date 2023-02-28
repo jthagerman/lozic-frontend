@@ -7,9 +7,7 @@ export const Image = styled.img`
   /* width: 100%; */
   /* height: 40.75%; */
   max-width: 100%;
-  max-height: 90%;
   background-repeat: no-repeat;
-  user-drag: none;
   object-fit: cover;
   transition: filter 0.2s ease-in;
 
@@ -36,7 +34,7 @@ export const Container = styled.div`
 export const Overlay = styled.div`
   position: absolute;
   bottom: 0px;
-  rihgt: 15px;
+  right: 15px;
   color: white;
   z-index: 10;
   width: 100%;

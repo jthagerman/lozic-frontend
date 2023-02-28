@@ -12,14 +12,14 @@ export const Title = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100%;  
+
 
   @media (max-width: ${breakpoints.tablet}px) {
     font-size: 40px;
   }
   @media (max-width: ${breakpoints.largePhone}px) {
     font-size: 30px;
-    width: 100vw;
     width: 100%;
     min-width: 0px;
   }
@@ -31,7 +31,7 @@ export const Description = styled.div`
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  margin: 20px 0px;
+
 
   @media (max-width: ${breakpoints.tablet}px) {
     font-size: 17px;

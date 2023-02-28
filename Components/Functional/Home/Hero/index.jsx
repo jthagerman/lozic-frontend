@@ -34,8 +34,7 @@ const Hero = () => {
           </Controls>
           <Text>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              quis sapian_2
+              Experience maximum acceleration with uncontested reliability.
             </span>
 
             <Button>Explore</Button>
@@ -43,15 +42,15 @@ const Hero = () => {
         </Overlay>
       </Wrapper>
 
-      <Row>
-        <Sale>
-          <Orange>10$</Orange>On Sale!
-        </Sale>
-        <Message>
-          We provide services that is very satasifying to customers, has many
-          products and needs that you need from
-        </Message>
-      </Row>
+      {/*<Row>*/}
+      {/*  <Sale>*/}
+      {/*    <Orange>5%</Orange>OFF ECU!*/}
+      {/*  </Sale>*/}
+      {/*  <Message>*/}
+      {/*    We provide services that is very satasifying to customers, has many*/}
+      {/*    products and needs that you need from*/}
+      {/*  </Message>*/}
+      {/*</Row>*/}
     </Container>
   );
 };

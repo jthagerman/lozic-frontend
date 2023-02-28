@@ -13,7 +13,7 @@ import Button from "Components/Functional/Common/Inputs/Button/Button";
 const ShopCard = ({ image, category, labels, link }) => {
   return (
     <Container>
-      <Image loading="lazy" src={image} alt={category}></Image>
+      <Image loading="lazy" src={"https://images.drive.com.au/caradvice/image/private/c_fill,f_auto,g_auto,h_674,q_auto:eco,w_1200/2b36070dedf6cc52d72254f765072adb"} alt={category}></Image>
 
       <ItemList>
         <Category>{category?.toUpperCase()}</Category>

@@ -56,7 +56,7 @@ const Shop = () => {
         <List>
           <ProductList list={list}></ProductList>
           <Navigation>
-            <Nav></Nav>
+            <Nav pageNumber={1} maxPages={1}></Nav>
           </Navigation>
         </List>
       </Wrapper>

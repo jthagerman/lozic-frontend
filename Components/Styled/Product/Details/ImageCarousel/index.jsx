@@ -20,6 +20,8 @@ export const ImageWrapper = styled.div`
   background: white;
   width: 100%;
   user-select: none;
+  
+  max-height: 450px;
 
   flex: 1;
   postion: relative;
@@ -34,6 +36,7 @@ export const Image = styled.img`
   place-items: center;
   max-height: 100%;
   max-width: 100%;
+  width: 100%;
   flex: 1;
   padding: 10px;
 `;

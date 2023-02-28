@@ -17,6 +17,7 @@ export const Section = styled.section`
   min-width: 275px;
   flex: 1;
   flex-direction: column;
+  align-items: ${props => props.alignRight ? 'flex-end' : 'flex-start'};
   @media (max-width: ${breakpoints.content + 100}px) {
     padding: 0px 25px;
   }

@@ -8,12 +8,11 @@ export const Container = styled.div`
 `;
 
 export const Options = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: ${(props) => (props.direction ? props.direction : "column")};
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
   > * {
-    margin: 0px 25px 8px 0px;
+    margin: 5px;
   }
 `;
 

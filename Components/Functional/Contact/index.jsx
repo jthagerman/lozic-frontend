@@ -18,49 +18,41 @@ const Contact = () => {
       <TextHeader
         padding="50px 0px 20px 0px"
         title="Contact Us"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros lectus tellus eget massa donec eleifend. Duis quis porta sed erat."
+        subtitle="Interested in discussing with us further? Leave your information below and we will get back to you as soon as possible."
       ></TextHeader>
       <Form>
         <InputBoxes>
           <Input
             type="text"
-            placeholder="Full Name"
+            placeholder="First Name"
             onChange={() => {}}
           ></Input>
           <Input type="text" placeholder="Car Name" onChange={() => {}}></Input>
           <Input
             type="text"
-            placeholder="Full Name"
+            placeholder="Vehicle"
             onChange={() => {}}
           ></Input>
           <Select placeholder="x" defaultValue="Select Service">
-            <option value="p"></option>
-            <option value="x">-</option>
-            <option value="y">-</option>
-            <option value="z">-</option>
+            <option value="Select Service">Select Service</option>
+            <option value="tuning">Tuning Questions</option>
+            <option value="parts">Part Inquiries</option>
+            <option value="shipping">Shipping & Refunds</option>
+            <option value="other">Other</option>
           </Select>
           <Input type="text" placeholder="Phone Number"></Input>
         </InputBoxes>
         <Box>
           <Checkbox
-            type="checkbox"
-            id="vehicle1"
-            name="vehicle1"
-            value="Bike"
+              type="checkbox"
+              id="vehicle1"
+              name="vehicle1"
+              value="Bike"
           ></Checkbox>
-          <label htmlFor="vehicle1">Button</label>
-        </Box>
-        <Box>
-          <Checkbox
-            type="checkbox"
-            id="vehicle1"
-            name="vehicle1"
-            value="Bike"
-          ></Checkbox>
-          <label htmlFor="vehicle1">Button</label>
+          <label htmlFor="vehicle1">You may call or text me</label>
         </Box>
 
-        <TextArea value="More Info" onChange={() => {}}></TextArea>
+        <TextArea value="Please provide detailed information on why you are contacting us." onChange={() => {}}></TextArea>
         <ButtonWrapper>
           <Button>Contact</Button>
         </ButtonWrapper>

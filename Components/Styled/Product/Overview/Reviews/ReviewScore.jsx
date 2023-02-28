@@ -11,7 +11,6 @@ export const Container = styled.div`
   align-items: center;
   padding: 0px 0px 10px 0px;
   max-height: 300px;
-  min-width: 400px;
 
   @media (max-width: ${breakpoints.largePhone}px) {
     min-width: 300px;

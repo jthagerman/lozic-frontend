@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Check = styled.div`
   height: 18px;
   width: 18px;
+  min-width: 18px;
+  min-height: 18px;
   border: 1px solid #dbdbdb;
   cursor: pointer;
   box-shadow: inset 0px 0px 0px 3px ${(props) => props.theme.background};

@@ -10,6 +10,7 @@ export const TabBar = styled.div`
   border-top: 4px solid #d9d9d9;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
 `;
 
 export const Tab = styled.div`
